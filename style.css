@@ -68,6 +68,7 @@ button {
 
 button:hover{
     background-color: #08a7e6;
+    transition: .1s;
 }
 
 .results {
@@ -114,7 +115,7 @@ footer a {
   color: #009ad8;
 }
 
-@media (min-width: 320px) and (max-width: 774px) {
+@media (min-width: 320px) and (max-width: 778px) {
   .busca input {
     width: 100px;
     padding: 1rem 12rem 1rem 0.7rem;
