@@ -20,8 +20,8 @@ WEATHER
 
 ## Features
 [//]: # (Add the features of your project here:)
-Dark Mode - Altere entre modo escuro e claro. Ao recarregar a página o tema se materá <br>
-Pesquisar - Procure por regiões para ver o clima.
+**Dark Mode** - Altere entre modo escuro e claro. Ao recarregar a página o tema se materá <br>
+**Pesquisar** - Procure por regiões para ver o clima.
 ## Techs
 
 ✅ **HTML** <br>
