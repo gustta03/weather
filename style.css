@@ -191,7 +191,7 @@ footer a {
 @media (min-width: 320px) and (max-width: 778px) {
 
   input[type="checkbox"]{
-    width: 20px;
+    width: 25px;
     height: 20px;
     margin-left: 2.2rem;
     
