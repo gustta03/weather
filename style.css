@@ -1,3 +1,8 @@
+:root{
+  --text: #FFF;
+  --background: #1E202B;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -5,9 +10,11 @@
     Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
     "Segoe UI Symbol";
 }
-body {
-  background-color: #393c47;
-  overflow-x: hidden;
+.dark-mode{
+  background-color: #2a2d3a;
+}
+.light-mode{
+  background-color: #ffffff;
 }
 header {
   width: 100vw;
@@ -15,13 +22,14 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  color: #fff;
-  background-color: #1e202b;
+  color: rgb(0, 0, 0);
+  background-color: #1E202B;
 }
 
 .logo {
   display: flex;
   align-items: center;
+  color: #FFF;
   margin-left: 5rem;
   cursor: pointer;
 }
@@ -53,6 +61,9 @@ header {
   outline: 0;
   border: 0;
   border-radius: 50px;
+  width: 210px;
+  background-color: #1E202B;
+  color: #FFF;
   padding: 1rem 22rem 1rem 0.7rem;
 }
 
@@ -73,11 +84,13 @@ button:hover{
 
 .results {
   width: 400px;
+  max-width: 500px;
   height: 19rem;
   background-color: #2a2d3a;
   border-radius: 10px;
+  position: relative;
+  right: 29px;
   text-align: center;
-
   color: #fff;
 }
 
@@ -97,7 +110,12 @@ button:hover{
   padding-left: 25px;
   padding-top: 25px;
 }
-
+.titulo{
+  background-color: #1E202B;
+  padding: 1rem;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
 .ventoPonto {
   width: 15px;
   height: 1px;
@@ -105,9 +123,19 @@ button:hover{
   transform-origin: left;
 }
 
+.toggle-dark-mod{
+  margin-right: 3rem;
+  width: 40px;
+  cursor: pointer;
+  background-color: #08a7e6;
+  height: 40px;
+}
+
 footer {
-  margin-top: 10px;
-  color: #fff;
+  position: absolute;
+  bottom: 10px;
+  color: rgb(0, 0, 0);
+  display: block;
 }
 
 footer a {
@@ -123,9 +151,14 @@ footer a {
 
   .results {
     width: 95%;
+    left: 2px;
   }
 
   button {
     margin-top: 10px;
   }
+}
+
+.mod{
+  background-color: #1E202B;
 }

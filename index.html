@@ -5,45 +5,46 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <script src="index.js" defer></script>
     <title>weather</title>
   </head>
-
   <body>
-    <header>
-      <div class="logo">
-        <img src="images/icons8-nuvem-64.png" />
-        <span>weather</span>
-      </div>
-    </header>
-    <div class="container">
-      <form class="busca">
-        <div>
-          <input type="text" placeholder="" />
-          <button>Buscar</button>
+      <header>
+        <div class="logo">
+          <img src="images/icons8-nuvem-64.png" />
+          <span>weather</span>
         </div>
-      </form>
-
-      <div class="results">
-        <div class="titulo">---</div>
-        <div class="info">
-          <div class="temp">
-            <div class="temTitulo">Temperatura</div>
-            <div class="tempInfo">--- <sup>ºC</sup></div>
-            <img src="http://openweathermap.org/img/wn/10d@2x.png" />
+        <div class="toggle-dark-mod" onclick="DarkMode()">
+      </header>
+      <div class="container">
+        <form class="busca">
+          <div>
+            <input type="text" placeholder="" id="searchInput"/>
+            <button>Buscar</button>
           </div>
-          <div class="vento">
-            <div class="ventoTitulo">Vento</div>
-            <div class="ventoInfo">-- <span>km/h</span></div>
-            <div class="ventoArea">
-              <div class="ventoPonto" style="transform: rotate(0deg)"></div>
+        </form>
+        <div class="results" style="display: none;">
+          <div class="titulo">---</div>
+          <div class="info">
+            <div class="temp">
+              <div class="temTitulo">Temperatura</div>
+              <div class="tempInfo">--- <sup>ºC</sup></div>
+              <img src="http://openweathermap.org/img/wn/10d@2x.png" />
+            </div>
+            <div class="vento">
+              <div class="ventoTitulo">Vento</div>
+              <div class="ventoInfo">-- <span>km/h</span></div>
+              <div class="ventoArea">
+                <div class="ventoPonto" style="transform: rotate(0deg)"></div>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      <footer>
-        Feito por
-        <a href="https://github.com/gustta03" target="_blank">Gustavo Alves</a>
-      </footer>
+        <div class="aviso"></div>
+        <footer>
+          Feito por
+          <a href="https://github.com/gustta03" target="_blank">Gustavo Alves</a>
+        </footer>
     </div>
   </body>
 </html>
