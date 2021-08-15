@@ -191,14 +191,14 @@ footer a {
 @media (min-width: 320px) and (max-width: 778px) {
 
   input[type="checkbox"]{
-    width: 25px;
+    width: 35px;
     height: 20px;
     margin-left: 2.2rem;
     
   }
 
   input:checked[type="checkbox"]::before{
-    left: 60px;
+    left: 10px;
   }
   .busca input {
     width: 100px;
