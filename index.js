@@ -2,12 +2,12 @@ document.querySelector(".busca").addEventListener("submit", async (event) => {
   event.preventDefault();
   const input = document.querySelector("#searchInput").value;
   if (input != "") {
-    clearInfo()
+    clearInfo();
     showWarning("Carregando...");
 
     let url = `https://api.openweathermap.org/data/2.5/weather?q=${encodeURI(
-        input
-      )}&appid=d06cdb298fafc83c520d5ab677fc477e&units=metric&lang=pt_br`;
+      input
+    )}&appid=d06cdb298fafc83c520d5ab677fc477e&units=metric&lang=pt_br`;
 
     let results = await fetch(url);
 
@@ -57,6 +57,66 @@ function showWarning(msg) {
 }
 
 function clearInfo() {
-    showWarning("");
+  showWarning("");
   document.querySelector(".results").style.display = "none";
+}
+
+const html = document.querySelector("html");
+const checkbox = document.querySelector("input[name=theme]");
+
+const getStyle = (element, style) =>
+  window.getComputedStyle(html).getPropertyValue("--bg");
+
+const initialColors = {
+  bgColorText: getStyle(html, "--text"),
+  bg: getStyle(html, "--bg"),
+};
+
+const darkMode = {
+  colorText: '#FFF',
+  bg: '#363542'
+}
+const transformKey = key => '--' + key.replace(/([A-Z])/, '$1').toLowerCase()
+
+
+
+const changeColors = (colors) => {
+  Object.keys(colors).map(key => 
+      html.style.setProperty(transformKey(key), colors[key]) 
+  )
+}
+
+checkbox.addEventListener('change', ({target}) => {
+  target.checked ? changeColors(darkMode) : changeColors(initialColors)
+})
+
+const isExistLocalStorage = (key) => 
+  localStorage.getItem(key) != null
+
+const createOrEditLocalStorage = (key, value) => 
+  localStorage.setItem(key, JSON.stringify(value))
+
+const getValeuLocalStorage = (key) =>
+  JSON.parse(localStorage.getItem(key))
+
+checkbox.addEventListener("change", ({target}) => {
+  if (target.checked) {
+    changeColors(darkMode) 
+    createOrEditLocalStorage('modo','darkMode')
+  } else {
+    changeColors(initialColors)
+    createOrEditLocalStorage('modo','initialColors')
+  }
+})
+
+if(!isExistLocalStorage('modo'))
+  createOrEditLocalStorage('modo', 'initialColors')
+
+
+if (getValeuLocalStorage('modo') === "initialColors") {
+  checkbox.removeAttribute('checked')
+  changeColors(initialColors);
+} else {
+  checkbox.setAttribute('checked', "")
+  changeColors(darkMode);
 }

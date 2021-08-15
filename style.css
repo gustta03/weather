@@ -1,6 +1,6 @@
-:root{
+html{
   --text: #FFF;
-  --background: #1E202B;
+  --bg: rgb(255, 255, 255);
 }
 
 * {
@@ -10,11 +10,10 @@
     Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
     "Segoe UI Symbol";
 }
-.dark-mode{
-  background-color: #2a2d3a;
-}
-.light-mode{
-  background-color: #ffffff;
+body{
+  background-color: var(--bg);
+  overflow-x: hidden;
+
 }
 header {
   width: 100vw;
@@ -25,7 +24,9 @@ header {
   color: rgb(0, 0, 0);
   background-color: #1E202B;
 }
-
+#toggle{
+  margin-right: 5rem;
+}
 .logo {
   display: flex;
   align-items: center;
@@ -131,6 +132,50 @@ button:hover{
   height: 40px;
 }
 
+input[type="checkbox"]{
+  position: relative;
+  width: 35px;
+  height: 20px;
+  -webkit-appearance: none;
+  background: #c6c6c6;
+  background-image: url(images/icons8-lua-brilhante-24.png);
+  background-repeat: no-repeat;
+  background-position: 20px;
+  background-size: 15px;
+  outline: none;
+  border-radius: 20px;
+  transform: scale(1.5);
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.4);
+  transition: .5s;
+}
+
+input:checked[type="checkbox"]{
+  background-size: 100%;
+  background: #3e94e4;
+}
+
+input[type="checkbox"]::before{
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 20px;
+  top: 0;
+  left: 0; 
+  background: #fff;
+  transform: scale(.9);
+  box-shadow: 0 2px 5px rgba(0, 0, 0,.2);
+  transition: .5s;
+}
+
+
+input:checked[type="checkbox"]::before{
+  left: 15px;
+}
+
+input[type="checkbox"]:checked + .container{
+  background: var(--black);
+}
 footer {
   position: absolute;
   bottom: 10px;
@@ -144,6 +189,15 @@ footer a {
 }
 
 @media (min-width: 320px) and (max-width: 778px) {
+  input{
+    background-color: aqua;
+  }
+  input[type="checkbox"]{
+    width:3220px;
+    height: 20px;
+    margin-left: 1rem;
+    
+  }
   .busca input {
     width: 100px;
     padding: 1rem 12rem 1rem 0.7rem;
