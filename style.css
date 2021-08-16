@@ -221,8 +221,11 @@ footer a {
   button {
     margin-top: 10px;
   }
-}
 
-.mod{
-  background-color: #1E202B;
+  #searchInput::placeholder{
+    color: white;
+    font-size: .9rem;
+    width: 200px;
+    font-weight: 300;
+  }
 }
