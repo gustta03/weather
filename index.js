@@ -3,6 +3,7 @@ document.querySelector(".busca").addEventListener("submit", async (event) => {
   const input = document.querySelector("#searchInput").value;
   if (input != "") {
     clearInfo();
+    document.querySelector(".aviso").style.color = '#000';
     showWarning("Carregando...");
 
     let url = `https://api.openweathermap.org/data/2.5/weather?q=${encodeURI(
@@ -25,6 +26,7 @@ document.querySelector(".busca").addEventListener("submit", async (event) => {
         WindAngle: json.wind.deg,
       });
     } else {
+      document.querySelector(".aviso").style.color = 'red';
       showWarning("Não encontramos esta localização.");
     }
   }
