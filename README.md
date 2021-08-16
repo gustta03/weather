@@ -28,6 +28,12 @@ WEATHER
 ✅ **CSS** <br>
 ✅ **JavaScript** <br>
 
+
+## Demonstração
+
+<p>Clique na imagem para acessar o site</p>
+<img src="./assets/demo/demos.png">
+
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](https://opensource.org/licenses/MIT) page for details.
