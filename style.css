@@ -194,8 +194,13 @@ input[type="checkbox"]:checked + .container{
   top: 25px;
 }
 @media (min-width: 320px) and (max-width: 778px) {
-
- 
+  .input{
+    margin-top: 40px ;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    left: 20px;
+  }
   input[type="checkbox"]{
     width: 31px;
     height: 20px;
