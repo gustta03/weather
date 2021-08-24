@@ -20,9 +20,15 @@ header {
   height: 9rem;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   color: rgb(0, 0, 0);
   background-color: #1E202B;
+}
+.header--area{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 95vw;
 }
 #toggle{
   margin-right: 5rem;
@@ -189,8 +195,9 @@ input[type="checkbox"]:checked + .container{
 }
 @media (min-width: 320px) and (max-width: 778px) {
 
+ 
   input[type="checkbox"]{
-    width: 95px;
+    width: 31px;
     height: 20px;
     margin-left: 2.2rem;
     
