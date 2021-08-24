@@ -182,18 +182,6 @@ input:checked[type="checkbox"]::before{
 input[type="checkbox"]:checked + .container{
   background: var(--black);
 }
-footer {
-  position: absolute;
-  bottom: 10px;
-  color: rgb(0, 0, 0);
-  display: block;
-  z-index: 999;
-}
-
-footer a {
-  text-decoration: none;
-  color: #009ad8;
-}
 .description{
   position: relative;
   text-transform: capitalize;
