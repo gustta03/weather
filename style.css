@@ -154,9 +154,7 @@ input[type="checkbox"]{
   font-weight: 300;
 }
 
-/* .aviso{
-  color: red;
-} */
+
 input:checked[type="checkbox"]{
   background-size: 100%;
   background: #3e94e4;
@@ -189,13 +187,18 @@ footer {
   bottom: 10px;
   color: rgb(0, 0, 0);
   display: block;
+  z-index: 999;
 }
 
 footer a {
   text-decoration: none;
   color: #009ad8;
 }
-
+.description{
+  position: relative;
+  text-transform: capitalize;
+  top: 25px;
+}
 @media (min-width: 320px) and (max-width: 778px) {
 
   input[type="checkbox"]{
@@ -204,7 +207,7 @@ footer a {
     margin-left: 2.2rem;
     
   }
-
+  
   input:checked[type="checkbox"]::before{
     left: 10px;
   }

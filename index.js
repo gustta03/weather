@@ -24,6 +24,7 @@ document.querySelector(".busca").addEventListener("submit", async (event) => {
         tempIcon: json.weather[0].icon,
         windSpeed: json.wind.speed,
         WindAngle: json.wind.deg,
+        Desc: json.weather[0].description
       });
     } else {
       document.querySelector(".aviso").style.color = 'red';
@@ -36,6 +37,7 @@ function showInfo(json) {
   showWarning("");
 
   document.querySelector(".results").style.display = "block";
+  document.querySelector(".description").innerHTML = `${json.Desc}`
   document.querySelector(".titulo").innerHTML = `${json.name}, ${json.country}`;
   document.querySelector(".tempInfo").innerHTML = `${json.temp} <sup>ºC</sup>`;
   document.querySelector(
@@ -62,6 +64,10 @@ function clearInfo() {
   showWarning("");
   document.querySelector(".results").style.display = "none";
 }
+
+
+data = new Date()
+console.log(data)
 
 const html = document.querySelector("html");
 const checkbox = document.querySelector("input[name=theme]");
