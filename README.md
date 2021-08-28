@@ -32,7 +32,7 @@ WEATHER
 ## Demonstração
 
 <p>Clique na imagem para acessar o site</p>
-<a href="https://projeto-weather.netlify.app/" target="_blank"><img src="./assets/demo/demos.png"></a>
+<a href="https://projeto-weather.netlify.app/" target="_blank"><img src="./assets/demo/demo-netlify.png"></a>
 
 ## License
 
