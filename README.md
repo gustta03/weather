@@ -13,7 +13,7 @@ WEATHER
 
 [//]: # (Add your gifs/images here:)
 <div>
-  <img src="./assets/demo/demoweather2.gif" alt="demo" height="425">
+  <img src="./assets/demo/demoweathergithub.gif" alt="demo" height="425">
 </div>
 
 <hr />
