@@ -1,6 +1,6 @@
 <h1 align="center">
 <br>
-WEATHER
+<img src="./assets/images/app-de-clima.png  "/>
 </h1>
 
 <p align="center">Veja como está o clima de qualquer região</p>
