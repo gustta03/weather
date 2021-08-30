@@ -24,10 +24,9 @@
 **Pesquisar** - Procure por regiões para ver o clima.
 ## Techs
 
-✅ **HTML** <br>
-✅ **CSS** <br>
-✅ **JavaScript** <br>
-
+- [x] HTML
+- [x] CSS
+- [x] JavaScript
 
 ## Demonstração
 
