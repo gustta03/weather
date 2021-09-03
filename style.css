@@ -23,9 +23,6 @@ header {
   justify-content: center;
   color: rgb(0, 0, 0);
   background-color: #1E202B;
-background: rgba(255,255,255,0.1);
-box-shadow: 20px 20px 40px -6px rgba(0,0,0,0.2);
-backdrop-filter: blur(2.9px);
 }
 .header--area{
   display: flex;
