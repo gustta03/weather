@@ -30,7 +30,7 @@
 
 ## Demonstração
 
-<p>Clique na imagem para acessar o site</p>
+<p>Clique na imagem para acessar a demo</p>
 <a href="https://projeto-weather.netlify.app/" target="_blank"><img src="./assets/demo/demo-netlify.png"></a>
 
 ## License
