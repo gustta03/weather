@@ -27,7 +27,6 @@
 - [x] HTML
 - [x] CSS
 - [x] JavaScript
-- [x] Mars
 
 ## Demonstração
 
